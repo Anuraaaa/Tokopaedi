@@ -1,0 +1,20 @@
+*{box-sizing: border-box;}
+
+.container {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.imgbrand {
+    height: auto;
+    max-width: 40px;
+    padding-right: 10px;
+}
+
+body {
+    font-family: 'nunito';
+}
+
+.homepage {
+    padding-left: 16px;
+}

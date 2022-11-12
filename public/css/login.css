@@ -1,0 +1,62 @@
+*{box-sizing: border-box;}
+
+.container{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.imgbrand {
+  height: auto;
+  max-width: 40px;
+  padding-right: 10px;
+}
+
+body {
+    font-family: 'nunito';
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for the submit/register button */
+  .loginbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .login:hover {
+    opacity:1;
+  }
+
+a {
+    color: dodgerblue;
+}
+
+  .register {
+    background-color: #f1f1f1;
+    text-align: center;
+  }
