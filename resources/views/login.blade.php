@@ -14,17 +14,17 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
         <div class="container">
             <img src="img/tokopedialogo.png" alt="" class="imgbrand">
-            <a class="navbar-brand" href="http://127.0.0.1:8000/home">Tokopaedi</a>
+            <a class="navbar-brand" href="{{ url('home') }}">Tokopaedi</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/home">Home</a>
+                <a class="nav-link active" aria-current="page" href="{{ url('home') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link active" href="http://127.0.0.1:8000/login">Login</a>
+                <a class="nav-link active" href="{{ url('login') }}">Login</a>
                 </li>
             </ul>
             <form class="d-flex" role="search">
@@ -34,19 +34,26 @@
             </div>
         </div>
     </nav>    
-    <form action="actionlogin">
+    <form action="/actionlogin" method="post">
+        @csrf
         <div class="container mt-4">
             <h1>Login</h1>
             <p>Please fill in this form to sign in account.</p>
             <hr>
+            @if(session('success'))
+                <p class="alert alert-success">{{ session('success') }}</p>
+            @endif
+            @if (session('error'))
+                <p class="alert alert-danger">{{ session('error') }}</p>
+            @endif
             <label for="email"><b>Email</b></label>
             <input type="text" placeholder="Enter Email" name="email" id="email" required>
             <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+            <input type="password" placeholder="Enter Password" name="password" id="password" required>
             <hr>
             <button type="submit" class="loginbtn">Login</button>
             <div class="container register">
-                <p>Don't have an account? <a href="http://127.0.0.1:8000/register">Register</a></p>
+                <p>Don't have an account? <a href="{{ url('register') }}">Register</a></p>
             </div>
         </div>
     </form>

@@ -21,18 +21,11 @@ use App\Http\Controllers\HomeController;
 // });
 
 Route::get('/register', [RegisterController::class, 'register'])->name('register');
-Route::get('actionregister', [RegisterController::class, 'actionregister']) -> name('actionregister');
+Route::post('/actionregister', [RegisterController::class, 'actionregister']) -> name('actionregister');
 
 Route::get('/login', [LoginController::class, 'login']) -> name('login');
-Route::get('actionlogin', [LoginController::class, 'actionlogin']) -> name('actionlogin');
+Route::post('/actionlogin', [LoginController::class, 'actionlogin']) -> name('actionlogin');
+Route::post('/actionlogout', [LoginController::class, 'actionlogout'])->name('actionlogout');
 
-Route::get('/home', [HomeController::class, 'index'])->name('home')->middleware('auth');
-Route::get('actionlogout', [LoginController::class, 'actionlogout'])->name('actionlogout')->middleware('auth');
-
-// Route::get('/login', function() {
-//     return view('login');
-// });
-
-// Route::get('home', function(){
-//     return view('home');
-// });
+Route::get('/home', [HomeController::class, 'home'])->name('home');
+Route::get('/loggedhome', [HomeController::class, 'loggedhome'])->name('loggedhome');
