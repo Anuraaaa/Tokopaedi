@@ -9,6 +9,18 @@
     <link rel="stylesheet" href="css/loggedhome.css">
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <!-- <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css"> -->
+    <!-- Ionicons -->
+    <!-- <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> -->
+    <!-- icheck bootstrap -->
+    <!-- <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css"> -->
+    <!-- Theme style -->
+    <!-- <link rel="stylesheet" href="dist/css/adminlte.min.css"> -->
+    <!-- Google Font: Source Sans Pro -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet"> -->
+
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
@@ -30,20 +42,62 @@
                 </form>
                 </li>
             </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
             </div>
         </div>
     </nav>
+    <div id="slider" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" height="300" src="img/slider/slidernew1.webp" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" height="300" src="img/slider/slidernew2.webp" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" height="300" src="img/slider/slidernew3.webp" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" height="300" src="img/slider/slidernew4.webp" alt="Fourth slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
     @if(session('success'))
         <p class="alert alert-success">{{ session('success') }}</p>
     @endif
     @if (session('error'))
         <p class="alert alert-danger">{{ session('error') }}</p>
     @endif            
-    <h1 class="homepage mt-4">Dashboard</h1>    
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <h1 class="homepage mt-4">Dashboard</h1>
+    <div class="product1">
+        <img src="img/product/sneakerhitam.jpg" alt="">
+        <h4>Sneaker Hitam</h4>
+    </div>    
+    <div class="product2">
+        <img src="img/product/sneakerputih.jfif" alt="">
+        <h4>Sneaker Putih</h4>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <!-- <script src="dist/js/adminlte.min.js"></script>
+    <script>
+        window.setTimeout(function() {
+            $(".alert").fadeTo(500, 0).slideUp(500, function() {
+                $(this).remove();
+            });
+        }, 1000);
+    </script> -->
 </body>
 </html>

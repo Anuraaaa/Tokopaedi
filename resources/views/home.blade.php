@@ -27,14 +27,33 @@
                 <a class="nav-link active" href="{{ url('login') }}">Login</a>
                 </li>
             </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
             </div>
         </div>
     </nav>        
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <div id="slider" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" height="300" src="img/slider/slidernew1.webp" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" height="300" src="img/slider/slidernew2.webp" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" height="300" src="img/slider/slidernew3.webp" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" height="300" src="img/slider/slidernew4.webp" alt="Fourth slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
     @if(session('success'))
         <p class="alert alert-success">{{ session('success') }}</p>
     @endif
@@ -42,5 +61,10 @@
         <p class="alert alert-danger">{{ session('error') }}</p>
     @endif            
     <h1 class="homepage mt-4">Halaman Home</h1>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

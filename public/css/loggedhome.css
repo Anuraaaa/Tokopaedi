@@ -14,3 +14,27 @@ body {
 .homepage {
     padding-left: 16px;
 }
+
+.product1 img{
+    display: block;
+    height: auto;
+    max-width: 350px;
+    margin-left: 50px;
+    border: 1px solid #ddd;
+    border-radius: 100px;
+    padding: 5px;
+}
+
+.product2 img{
+    display: block;
+    height: auto;
+    max-width: 350px;
+    margin-left: 50px;
+    border: 3px solid #ddd;
+    border-radius: 100px;
+    padding: 5px;
+}
+
+.product1 h4 {
+    text-align: center;
+}
