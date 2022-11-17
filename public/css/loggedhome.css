@@ -11,15 +11,27 @@ body {
     padding-right: 10px;
 }
 
-.homepage {
-    padding-left: 16px;
+.product1 {
+    display: block;
+    position: absolute;
+    border: 10px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 10px 25px 30px rgba(0,0,0,0.3);    
+}
+
+.product2 {
+    display: block;
+    position: absolute;
+    margin-left: 664px;
+    border: 10px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 10px 25px 30px rgba(0,0,0,0.3);    
 }
 
 .product1 img{
     display: block;
     height: auto;
     max-width: 350px;
-    margin-left: 50px;
     border: 1px solid #ddd;
     border-radius: 100px;
     padding: 5px;
@@ -29,12 +41,15 @@ body {
     display: block;
     height: auto;
     max-width: 350px;
-    margin-left: 50px;
     border: 3px solid #ddd;
     border-radius: 100px;
     padding: 5px;
 }
 
-.product1 h4 {
+.product1 h4, .product1 h5 {
+    text-align: center;
+}
+
+.product2 h5, .product2 h4 {
     text-align: center;
 }
