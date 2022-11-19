@@ -20,12 +20,12 @@ use App\Http\Controllers\HomeController;
 //     return view('welcome');
 // });
 
-Route::get('/register', [RegisterController::class, 'register'])->name('register');
-Route::post('/actionregister', [RegisterController::class, 'actionregister']) -> name('actionregister');
+Route::get('/register', [RegisterController::class, 'register'])->name('register')->middleware('guest');
+Route::post('/actionregister', [RegisterController::class, 'actionregister']) -> name('actionregister')->middleware('guest');
 
-Route::get('/login', [LoginController::class, 'login']) -> name('login');
-Route::post('/actionlogin', [LoginController::class, 'actionlogin']) -> name('actionlogin');
-Route::post('/actionlogout', [LoginController::class, 'actionlogout'])->name('actionlogout');
+Route::get('/login', [LoginController::class, 'login']) -> name('login')->middleware('guest');
+Route::post('/actionlogin', [LoginController::class, 'actionlogin']) -> name('actionlogin')->middleware('guest');
+Route::post('/actionlogout', [LoginController::class, 'actionlogout'])->name('actionlogout')->middleware('auth');
 
 Route::get('/home', [HomeController::class, 'home'])->name('home');
-Route::get('/loggedhome', [HomeController::class, 'loggedhome'])->name('loggedhome');
+Route::get('/loggedhome', [HomeController::class, 'loggedhome'])->name('loggedhome')->middleware('auth');
