@@ -64,3 +64,9 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Tokopaedi - Description
+The repository is learn to make online shop website with framework laravel 9
+
+## Tokopaedi - Credits
+* [Anura](https://github.com/Anuraaaa)
