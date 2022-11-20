@@ -15,16 +15,9 @@
     <div class="container">
         @include('partials.slider')
         @include('partials.notify')
-        <h1>Halaman Home</h1>
-        <div class="product1">
-            <img src="img/product/sneakerhitam.jpg" alt="">
-            <h4>Sneaker Hitam Sweet Child</h4>
-            <h5>RP 164.000,00</h5>
-        </div>    
-        <div class="product2">
-            <img src="img/product/sneakerputih.jfif" alt="">
-            <h4>Sneaker Putih Long Child</h4>
-            <h5>RP 296.000,00</h5>
+        <div class="content">
+            <h1>Halaman Home</h1>
+            @include('partials.product')
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
