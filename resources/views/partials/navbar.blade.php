@@ -14,6 +14,18 @@
                 <li class="nav-item">
                 <a class="nav-link active" href="{{ url('login') }}">Login</a>
                 </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link active dropdown-toggle" role="button" data-bs-toggle="dropdown">Kategori</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">Topi</a></li>
+                        <li><a href="#" class="dropdown-item">Baju</a></li>
+                        <li><a href="#" class="dropdown-item">Celana</a></li>
+                        <li><a href="#" class="dropdown-item">Kaos Kaki</a></li>
+                        <li><a href="#" class="dropdown-item">Sepatu</a></li>
+                        <li><a href="#" class="dropdown-item">Tas</a></li>
+                        <li><a href="#" class="dropdown-item">Kacamata</a></li>
+                    </ul>
+                </li>
             </ul>
             </div>
         </div>
@@ -37,6 +49,18 @@
                     @csrf
                     <button class="btn btn-success">Logout</button>
                 </form>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link active dropdown-toggle" role="button" data-bs-toggle="dropdown">Kategori</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">Topi</a></li>
+                        <li><a href="#" class="dropdown-item">Baju</a></li>
+                        <li><a href="#" class="dropdown-item">Celana</a></li>
+                        <li><a href="#" class="dropdown-item">Kaos Kaki</a></li>
+                        <li><a href="#" class="dropdown-item">Sepatu</a></li>
+                        <li><a href="#" class="dropdown-item">Tas</a></li>
+                        <li><a href="#" class="dropdown-item">Kacamata</a></li>
+                    </ul>
                 </li>
             </ul>
             </div>
