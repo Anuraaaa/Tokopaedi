@@ -5,6 +5,10 @@
     padding-right: 16px;
 }
 
+.content{
+    padding-top: 24px;
+}
+
 .imgbrand {
     height: auto;
     max-width: 40px;
@@ -39,6 +43,8 @@ body {
     border: 1px solid #ddd;
     border-radius: 100px;
     padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .product2 img{
@@ -48,12 +54,18 @@ body {
     border: 3px solid #ddd;
     border-radius: 100px;
     padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.product1 h4, .product1 h5 {
-    text-align: center;
+.product1 h4, .product1 h5, .product1 h6 {
+    text-align: justify;
 }
 
-.product2 h5, .product2 h4 {
-    text-align: center;
+.product2 h6, .product2 h5, .product2 h4 {
+    text-align: justify;
+}
+
+.contentimage {
+    padding-top: 16px;
 }
